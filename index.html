@@ -21,7 +21,7 @@
         <a href="#services">Services</a>
         <a href="#barbers">Barbers</a>
         <a href="#hours">Hours</a>
-        <a href="#book" class="btn-solid" id="book-main">Book</a>
+        <button class="btn-solid" id="book-main">Book</button>
       </nav>
     </div>
   </header>
@@ -32,9 +32,15 @@
         <h2>Sharp Cuts. Easy Booking.</h2>
         <p>Mocha Manes delivers clean styles with simple online scheduling. Meet the barbers and book your slot in seconds.</p>
         <button class="btn-primary" id="hero-book">Book Now</button>
+        <div class="location-card" style="margin-top:16px; max-width:360px; background:#fff; padding:12px; border-radius:10px; box-shadow:0 20px 50px rgba(31,35,40,0.08);">
+          <h4 style="margin:4px 0;">Location</h4>
+          <p style="margin:2px 0;">714 Hamilton Blvd,<br/>South Plainfield, NJ 07080</p>
+          <p style="margin:2px 0;"><strong>Phone:</strong> <a href="tel:9087557771" style="color: var(--accent); text-decoration:none;">(908) 755-7771</a></p>
+          <p style="margin:2px 0;"><strong>Hours (today):</strong> <span data-todays-hours></span></p>
+        </div>
       </div>
       <div class="hero-image">
-        <img src="assets/storefront.jpg" alt="Barber shop" />
+        <img src="assets/storefront.jpg" alt="Mocha Manes storefront" />
       </div>
     </div>
   </section>
@@ -108,11 +114,11 @@
       <div class="info-row">
         <div class="box">
           <h4>Location</h4>
-          <p>Mocha Manes Barber Shop<br/>714 Hamilton Blvd, South Plainfield, NJ 07080</p>
+          <p>Mocha Manes Barber Shop<br/>714 Hamilton Blvd,<br/>South Plainfield, NJ 07080</p>
         </div>
         <div class="box">
           <h4>Hours</h4>
-            <p>
+          <p>
             <strong>Friday:</strong> 10AM–8PM<br/>
             <strong>Saturday:</strong> 8AM–6PM<br/>
             <strong>Sunday:</strong> 11AM–4PM<br/>
@@ -135,8 +141,8 @@
         </div>
         <div>
           <h4>Contact</h4>
-          <p>Phone: (908) 755-7771</p>
-          <p>Email: info@mochamanes.com</p>
+          <p>Phone: <a href="tel:9087557771" style="color: #f1e9e3; text-decoration:none;">(908) 755-7771</a></p>
+          <p>Email: <a href="mailto:info@mochamanes.com" style="color: #f1e9e3; text-decoration:none;">info@mochamanes.com</a></p>
         </div>
         <div>
           <h4>Booking</h4>
@@ -147,8 +153,9 @@
     </div>
   </footer>
 
-  <!-- Calendly widget script -->
+  <!-- Calendly widget script (must load before using) -->
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+  <!-- Your application logic -->
   <script src="js/app.js"></script>
 </body>
 </html>
